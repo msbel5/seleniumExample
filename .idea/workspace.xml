@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ebf57c6-11c8-42af-878b-a73f6e843569" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/ExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/LoggerHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/TextFileWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/CartPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/HomePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/ProductPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2RNpk5M6hwGR2RGwRoxXKBw9Ogs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/msbel/IdeaProjects/seleniumExample/src/test",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\msbel\IdeaProjects\seleniumExample\src\test" />
+      <recent name="C:\Users\msbel\IdeaProjects\seleniumExample\src\test\java" />
+      <recent name="C:\Users\msbel\IdeaProjects\seleniumExample\src\test\java\org\sExample" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\msbel\IdeaProjects\seleniumExample\src\main\resources" />
+      <recent name="C:\Users\msbel\IdeaProjects\seleniumExample\src\main\resources\drivers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BaseTest.chooseGender">
+    <configuration name="BaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sExample.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sExample.Test" />
+      <option name="MAIN_CLASS_NAME" value="org.sExample.Test.BaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseTest.chooseGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sExample.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sExample.Test" />
+      <option name="MAIN_CLASS_NAME" value="org.sExample.Test.BaseTest" />
+      <option name="METHOD_NAME" value="chooseGender" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseTest.testHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sExample.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sExample.Test" />
+      <option name="MAIN_CLASS_NAME" value="org.sExample.Test.BaseTest" />
+      <option name="METHOD_NAME" value="testHomePage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.testHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="seleniumExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sExample.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sExample.Test" />
+      <option name="MAIN_CLASS_NAME" value="org.sExample.Test.HomePageTest" />
+      <option name="METHOD_NAME" value="testHomePage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BaseTest.chooseGender" />
+        <item itemvalue="JUnit.BaseTest.testHomePage" />
+        <item itemvalue="JUnit.BaseTest" />
+        <item itemvalue="JUnit.HomePageTest.testHomePage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ebf57c6-11c8-42af-878b-a73f6e843569" name="Changes" comment="" />
+      <created>1687100535107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687100535107</updated>
+      <workItem from="1687100539694" duration="79000" />
+      <workItem from="1687100629691" duration="16615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
+          <line>27</line>
+          <properties class="org.sExample.Test.BaseTest" method="driver">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.sExample.Pages.HomePage" memberName="driver" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/seleniumExample$BaseTest_testHomePage.ic" NAME="BaseTest.testHomePage Coverage Results" MODIFIED="1687125959887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.sExample.Test.*</FILTER>
+    </SUITE>
+  </component>
+</project>

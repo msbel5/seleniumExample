@@ -11,7 +11,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class ExcelReader {
-    private static final String FILE_PATH = "src/main/resources/data.xlsx";
+    private static final String FILE_PATH = "src/test/resources/data.xlsx";
 
     public String readCellData(int vRow, int vColumn) {
         String value = null;
@@ -40,4 +40,9 @@ public class ExcelReader {
         }
         return value;
     }
+
+    public String readFirstColumnData(int vRow) {
+        return readCellData(vRow, 0);  // 0 is the first column
+    }
+
 }

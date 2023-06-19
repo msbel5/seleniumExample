@@ -21,14 +21,13 @@ public class BasePage {
     @FindBy(how = How.CSS, using = "#onetrust-pc-btn-handler")
     public WebElement rejectCookiesButton;
 
-    @FindBy(how = How.CSS, using = "#genderManButton")
+    @FindBy(how = How.ID, using = "genderManButton")
     private WebElement maleButton;
 
     @FindBy(how = How.CSS, using = "#genderWomanButton")
     private WebElement femaleButton;
 
-
-    @FindBy(how = How.CLASS_NAME, using = "default-input o-header__search--input")
+    @FindBy(how = How.XPATH, using = "//*[@class='default-input o-header__search--input']")
     private WebElement searchBox;
 
     public void setDriver(WebDriver driver) {
@@ -50,17 +49,21 @@ public class BasePage {
 
 
     public void enterSearch(String keyword) {
-        searchBox = wait.until(ExpectedConditions.elementToBeClickable(searchBox));
+        searchBox = wait.until(ExpectedConditions.visibilityOf(searchBox));
+        searchBox.click();
         searchBox.sendKeys(keyword);
     }
 
     public void clearSearch() {
         searchBox = wait.until(ExpectedConditions.elementToBeClickable(searchBox));
-        searchBox.clear();
+        searchBox.click();
+        searchBox.sendKeys(Keys.CONTROL + "A");
+        searchBox.sendKeys(Keys.DELETE);
     }
 
     public void search() {
         searchBox = wait.until(ExpectedConditions.elementToBeClickable(searchBox));
+        searchBox.click();
         searchBox.sendKeys(Keys.ENTER);
     }
 

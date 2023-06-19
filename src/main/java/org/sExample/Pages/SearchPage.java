@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class SearchPage extends BasePage {
 
-    @FindBy(how = How.CSS, using = "//span[contains(@class, 'rc-tree-switcher_close')]")
+    @FindBy(how = How.XPATH, using = "//*[@class='o-productList__item']")
     private List<WebElement> productImages;
 
     public SearchPage() {

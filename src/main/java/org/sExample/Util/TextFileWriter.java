@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class TextFileWriter {
-    private static final String FILE_PATH = "src/main/resources/info.txt";
+    private static final String FILE_PATH = "src/test/resources/info.txt";
 
     public void writeProductInfo(String productInfo, String price) {
         try {

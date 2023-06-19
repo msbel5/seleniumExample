@@ -13,7 +13,6 @@ import org.testng.annotations.BeforeMethod;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -30,14 +29,12 @@ public class BaseTest {
         chromeOptions.setExperimentalOption("prefs", prefs);
         chromeOptions.addArguments("--ignore-certificate-errors");
         chromeOptions.addArguments("--remote-allow-origins=*");
+        chromeOptions.addArguments("--disable-notifications");
         driver = new ChromeDriver(chromeOptions);
         basePage = PageFactory.initElements(driver, BasePage.class);
         basePage.setDriver(driver);
-        driver.manage().deleteAllCookies();
+        //driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        basePage.setDriver(driver);
         driver.get("https://www.beymen.com/");
 
     }

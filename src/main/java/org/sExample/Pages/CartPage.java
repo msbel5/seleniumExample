@@ -11,7 +11,7 @@ public class CartPage extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = "m-basket__productInfoName")
     WebElement productNameInCart;
 
-    @FindBy(how = How.CLASS_NAME, using = "m-productPrice__salePrice")
+    @FindBy(how = How.XPATH, using = "//*[@class='m-productPrice__salePrice']")
     WebElement productPriceInCart;
 
     @FindBy(how = How.ID, using = "quantitySelect0-key-0")
@@ -20,12 +20,14 @@ public class CartPage extends BasePage {
     @FindBy(how = How.CSS, using = "#removeCartItemBtn0-key-0")
     WebElement removeItemButton;
 
+    @FindBy(how = How.CLASS_NAME, using = "m-empty__messageTitle")
+    WebElement emptyCartMessage;
+
     public CartPage() {
-        super();
     }
 
     public String getProductNameInCart() {
-        wait.until(ExpectedConditions.visibilityOf(productNameInCart));
+        wait.until(ExpectedConditions.visibilityOf(productPriceInCart));
         return productNameInCart.getText();
     }
 
@@ -47,6 +49,20 @@ public class CartPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(quantityDropdown));
         Select select = new Select(quantityDropdown);
         select.selectByIndex(index);
+    }
+
+    public void increaseProductQuantity() {
+        int currentQuantity = Integer.parseInt(getProductQuantity());
+        setProductQuantity(currentQuantity + 1);
+    }
+
+    public boolean isCartEmpty() {
+        wait.until(ExpectedConditions.visibilityOf(emptyCartMessage));
+        return emptyCartMessage.isDisplayed();
+    }
+
+    public void waitVisibility() {
+        wait.until(ExpectedConditions.visibilityOf(productPriceInCart));
     }
 }
 

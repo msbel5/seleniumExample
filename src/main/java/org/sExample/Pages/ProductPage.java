@@ -7,20 +7,22 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class ProductPage extends BasePage {
 
-    @FindBy(how = How.CSS, using = "#priceNew")
-    public WebElement productPrice;
-
-    @FindBy(how = How.CLASS_NAME, using = "o-productDetail__description")
-    public WebElement productName;
+    @FindBy(how = How.ID, using = "priceNew")
+    private WebElement productPrice;
+    @FindBy(how = How.XPATH, using = "//*[@class='o-productDetail__description']")
+    private WebElement productName;
     @FindBy(how = How.CLASS_NAME, using = "m-variation__item")
     List<WebElement> sizes;
     @FindBy(how = How.CSS, using = "#addBasket")
     private WebElement addToCartButton;
-    @FindBy(how = How.CLASS_NAME, using = "icon icon-cart")
+    @FindBy(how = How.XPATH, using = "//*[@class='icon icon-cart']")
     private WebElement goToCartButton;
+    @FindBy(how = How.XPATH, using = "//*[@class='m-notification__button btn']")
+    private WebElement goToCartNotificationButton;
 
 
     public ProductPage() {
@@ -38,9 +40,14 @@ public class ProductPage extends BasePage {
     }
 
     public void selectRandomSize() {
-        Random random = new Random();
-        int randomSizeIndex = random.nextInt(sizes.size());
-        WebElement randomSize = sizes.get(randomSizeIndex);
+        List<WebElement> enabledSizes = sizes.stream()
+                .filter(size -> !size.getAttribute("class").contains("-disabled"))
+                .collect(Collectors.toList());
+        if (enabledSizes.isEmpty()) {
+            throw new IllegalStateException("No enabled sizes found!");
+        }
+        int randomSizeIndex = new Random().nextInt(enabledSizes.size());
+        WebElement randomSize = enabledSizes.get(randomSizeIndex);
         wait.until(ExpectedConditions.elementToBeClickable(randomSize)).click();
     }
 
@@ -51,7 +58,7 @@ public class ProductPage extends BasePage {
     }
 
     public void goToCart() {
-        goToCartButton = wait.until(ExpectedConditions.elementToBeClickable(goToCartButton));
+        goToCartButton = wait.until(ExpectedConditions.elementToBeClickable(goToCartNotificationButton));
         goToCartButton.click();
     }
 }

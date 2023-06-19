@@ -5,30 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ebf57c6-11c8-42af-878b-a73f6e843569" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/SearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/LoggerHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/TextFileWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/CartPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/HomePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/ProductPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sExample/Util/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/ExcelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sExample/Util/TextFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sExample/Util/TextFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/sExample/Test/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/sExample/Test/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/info.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +68,7 @@
       <recent name="C:\Users\msbel\IdeaProjects\seleniumExample\src\main\resources\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BaseTest.chooseGender">
+  <component name="RunManager" selected="TestNG.HomePageTest.testProductPurchase">
     <configuration name="BaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="seleniumExample" />
       <extension name="coverage">
@@ -145,8 +132,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HomePageTest.testProductPurchase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sExample.Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.sExample.Test" />
+      <option name="MAIN_CLASS_NAME" value="org.sExample.Test.HomePageTest" />
+      <option name="METHOD_NAME" value="testProductPurchase" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTest.testProductPurchase" />
         <item itemvalue="JUnit.BaseTest.chooseGender" />
         <item itemvalue="JUnit.BaseTest.testHomePage" />
         <item itemvalue="JUnit.BaseTest" />
@@ -163,8 +169,16 @@
       <option name="presentableId" value="Default" />
       <updated>1687100535107</updated>
       <workItem from="1687100539694" duration="79000" />
-      <workItem from="1687100629691" duration="16615000" />
+      <workItem from="1687100629691" duration="26138000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1687135207185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687135207185</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,41 +186,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/sExample/Test/BaseTest.java</url>
-          <line>27</line>
-          <properties class="org.sExample.Test.BaseTest" method="driver">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.sExample.Pages.HomePage" memberName="driver" />
